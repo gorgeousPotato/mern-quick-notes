@@ -1,0 +1,34 @@
+.form-container {
+  width:30vw;
+  margin-top: 2rem;
+}
+
+.signup-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+  align-items: center;
+}
+
+
+.form-container input{
+  height: 2rem;
+  border: 1px solid lavender;
+  border-radius: 100px;
+}
+
+.form-container button {
+  margin-top: 2rem;
+  display:block;
+  padding: .5rem 2rem;
+  border-radius: 100px;
+  border: none;
+  background-color: rgb(138, 138, 184);
+  color: lavender;
+}
+
+.form-container button:hover {
+  background-color: lavender;
+  color: rgb(138, 138, 184);
+
+}
