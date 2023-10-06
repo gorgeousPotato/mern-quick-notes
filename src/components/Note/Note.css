@@ -1,0 +1,21 @@
+.Note .note-item{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  justify-items: start;
+  align-items: center;
+}
+
+.note-item button {
+  grid-column: 3/4;
+  border-radius: 100px;
+  background-color: lavender;
+  padding: .5rem 2rem;
+  border: none;
+  color: rgb(121, 121, 182);
+}
+
+.note-item button:hover {
+  background-color: rgb(121, 121, 182);
+  color: lavender
+
+}

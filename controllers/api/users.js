@@ -4,8 +4,7 @@ const bcrypt = require('bcrypt');
 
 module.exports = {
   create,
-  login,
-  checkToken
+  login
 }
 
 async function create(req,res) {
@@ -20,7 +19,7 @@ try {
 
 async function login(req,res) {
   try {
-    const user = User.findOne({email: req.body.email})
+    const user = await User.findOne({email: req.body.email})
     if (!user) throw new Error();
     const match = await bcrypt.compare(req.body.password, user.password)
     if (!match) throw new Error();
@@ -30,10 +29,6 @@ async function login(req,res) {
   }
 }
 
-function checkToken(req,res) {
-  console.log('req.user', req.user)
-  res.json(req.exp);
-}
 
 //Helper function
 

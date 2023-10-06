@@ -1,0 +1,22 @@
+.NewNoteForm button {
+  display:block;
+  padding: .5rem 2rem;
+  border-radius: 100px;
+  border: none;
+  background-color: rgb(138, 138, 184);
+  color: lavender;
+}
+
+.NewNoteForm button:hover {
+  background-color: lavender;
+  
+  color: rgb(138, 138, 184);
+
+}
+
+.NewNoteForm textarea {
+  border: 1px solid lavender;
+  border-radius: 1rem;
+
+}
+
